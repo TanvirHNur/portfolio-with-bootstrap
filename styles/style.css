@@ -1,0 +1,119 @@
+/* ------------google fonts----------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+font-family: 'Montserrat', sans-serif;
+margin: 0;
+/* background: #E5E5E5; */
+}
+
+.search-container{
+    background: #fff;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 40%;
+}
+
+.search-input{
+     width: 400px;
+    height:40px;
+}
+
+.search-container .search-input{
+    border: none;
+    outline:none;
+
+}
+.search-btn{
+    color: red;
+}
+
+/* nav stylesheet */
+.menu-bar{
+    background-color: #003a1a;
+}
+.hero-btn{
+    color: #FFF !important;
+    padding: 3px 6px;
+}
+.hero-btn:hover{
+    background-color: #e02c6d;
+    padding: 3px 6px;
+}
+.text-size{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.my-btn{
+    /* background-color: ; */
+    border: 1px solid #F66055;
+    color: #F66055;
+    padding: 8px 16px;
+}
+.my-btn:hover{
+    color:  #FFF;
+    background-color: #F66055;
+    transition: 1s;
+}
+.my-btn-1{
+    /* background-color: ; */
+    /* border: 1px solid #F66055; */
+    color: #F66055;
+    padding: 6px 10px;
+}
+.my-btn-1:hover{
+    color:  #FFF;
+    background-color: #F66055;
+    transition: 1s;
+}
+
+/* --------------------------------
+           about
+-------------------------------- */
+.section-title{
+    color: #5d0ee3;
+}
+
+.social-link{
+    font-size: 23px;
+    color: #5d0ee3;
+}
+.fact-item i{
+    color: #00C88F;
+}
+
+
+.service{
+    color: #FFF;
+}
+.service .card:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: 1s;
+}
+.s-c:hover{
+    cursor: pointer;
+    transform: translateY(10px);
+    transition: 1s;
+}
+/* --------------------------------
+            Media-Quearis
+-------------------------------- */
+
+
+@media only screen and (max-width: 992px) {
+    .top-nav{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .search-form{
+        display: none;
+    }
+}
