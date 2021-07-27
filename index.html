@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <title>Tanvir | The Tech Guy</title>
+    <link rel="icon" type="image/png" href="images/logo2.jpg" sizes="20x14">
      <!-- font-awesome -->
      <script src="https://kit.fontawesome.com/c0779e35be.js" crossorigin="anonymous"></script>
      <!-- bootstrap style-------------------------sheet -->
+     <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -46,45 +50,51 @@
             </nav>
           </div>
        <!------------------ nav bar start  --------------------->
-       <nav class="navbar navbar-light menu-bar sticky-top">
-        <div class="container-lg">
-          <a class="navbar-brand fs-4 hero-btn">Tanvir Tech</a>
-          
-          <!-- <div class="search">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-          </div> -->
-          <form class="ms-auto search-form">
-            <div class="search-container bg-light">
-              <input type="text" name="search" placeholder="Search..." class="search-input">
-              <a href="#" class="search-btn">
-                <i class="fas fa-search"></i>
-              </a>
-            </div>
-          </form>
-          
-          <div class="dropdown">
-            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa fa-bars hero-btn" aria-hidden="true"></i>
-              </button>
-            </a>
-          
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item my-btn-1" href="index.html">Home</a></li>
-              <li><a class="dropdown-item my-btn-1" href="#about">About Us</a></li>
-              <li><a class="dropdown-item my-btn-1" href="#services">Services</a></li>
-              <li><a class="dropdown-item my-btn-1" href="#">Portfolio</a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-              <li><a class="dropdown-item" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+         
 
        <!------------------ nav bar end  --------------------->
     </header>
+    <div class="sticky-top">
+        <nav class="navbar navbar-light menu-bar second-navbar">
+         <div class="container-lg">
+           <a class="navbar-brand fs-4 hero-btn">Tanvir <p style="font-size: 10px;">The Tech Guy</p></a>
+           
+           <!-- <div class="search">
+             <form class="d-flex">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
+           </div> -->
+           <form class="ms-auto search-form">
+             <div class="search-container bg-light">
+               <input type="text" name="search" placeholder="Search..." class="search-input">
+               <a href="#" class="search-btn">
+                 <i class="fas fa-search"></i>
+               </a>
+             </div>
+           </form>
+           
+           <div class="dropdown">
+             <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                 <i class="fa fa-bars hero-btn" aria-hidden="true"></i>
+               </button>
+             </a>
+           
+             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+               <li><a class="dropdown-item my-btn-1" href="index.html">Home</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#about">About Me</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#services">Services</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#portfolio">Portfolio</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#hire">Hire Me</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#reviews">Reviews</a></li>
+               <li><a class="dropdown-item my-btn-1" href="#contact">Contact</a></li>
+               <!-- <li><a class="dropdown-item" href="#"></a></li>
+               <li><a class="dropdown-item" href="#"></a></li> -->
+             </ul>
+           </div>
+         </div>
+       </nav>
+     </div>
     <!--------------- js for stylesheet------------------------ -->
     <main>
         <!------------- home page start------------>
@@ -93,23 +103,23 @@
                 <div class="row min-vh-100 align-items-center d-flex justify-content-between">
                     <div class="col-md-6">
                         <div class="home-img">
-                            <img class="img-thumbnail rounded" src="images/profile.png" alt="">
+                            <img class="img-thumbnail rounded" src="images/first-img.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 order-md-first">
-                        <div class="home-text">
-                            <p class="text-muted">Hello I'm</p>
+                        <div class="home-text" data-aos="fade-in">
+                            <p class="text-muted">Meet the Developer</p>
                             <h2>Tanvir Hossain</h2>
                             <h1 class="text-danger">Web Designer</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            <a class="btn my-btn" href="">My Work</a>
+                            <p>Learning Front-end Development, Coding is fun.<span class="js-text-animation"></span></p>
+                            <a class="btn my-btn" href="#my-work">My Work</a>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
-        <!-------------- home page end------------>
+        <!----Developer,Learning Front-end Development, Coding is fun.---------- home page end------------>
        <!------------ about section start--------------->
        <section class="about bg-white py-5" id="about">
         <div class="container py-4">
@@ -121,17 +131,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="about-text">
-                        <h3 class="fs-4 mb-3">Et aliquyam accusam dolores eirmod duo et</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sapiente odio nobis aliquid eum necessitatibus quis, quam aperiam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sapiente odio nobis aliquid eum necessitatibus quis, uid eum necessitatibus quis, quam aperiam,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sapiente odio nobis aliquid eum necessitatibus quis,quam aperiam,</p>
+                        <h3 class="fs-4 mb-3">The Change Maker</h3>
+                        <p class="text-muted">Hello my name is "Tanvir Hossain". I’m learning MREN Stack Web Development & I am an enthusiastic, dedicated.
+                            My objectives are increasing my knowledge in computer science fields and new technologies especially, web development and web Design field. Always looking forward to learn new technologies and be a part of a huge change in the world..</p>
                     </div>
                     <div class="row mb-4">
                         <div class="col-lg-12 d-flex align-items-center justify-content-evenly">
-                            <a class="my-btn btn" target="_blank" href="https://www.linkedin.com/in/tanvir-hossain-1aa340196/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9ClqzuZhQBiSTUGXw%2B8zSw%3D%3D">Download Resume</a>
-                            <div class="social-link">
-                                <a class="social-link" href=""><i class="fa fa-facebook-official me-3" aria-hidden="true"></i></a>
-                                <a class="social-link" href=""><i class="fa fa-linkedin-square me-3" aria-hidden="true"></i></a>
-                                 <a class="social-link" href=""><i class="fa fa-youtube me-3" aria-hidden="true"></i></a>
-                                 <a class="social-link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a class="my-btn btn" target="_blank" href="cv.pdf">Download Resume</a>
+                            <div class="social-link ms-3">
+                                <a class="social-link" target="_blank" href="https://www.facebook.com/tanvir.hossain.ierdu/"><i class="fa fa-facebook-official me-3" aria-hidden="true"></i></a>
+                                <a class="social-link" target="_blank" href="https://www.linkedin.com/in/tanvir-hossain-1aa340196/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9ClqzuZhQBiSTUGXw%2B8zSw%3D%3D"><i class="fa fa-linkedin-square me-3" aria-hidden="true"></i></a>
+                                 <a class="social-link" target="_blank" href="youtube.com"><i class="fa fa-youtube me-3" aria-hidden="true"></i></a>
+                                 <a class="social-link" target="_blank" href="https://www.instagram.com/tanvir.712/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -156,9 +167,9 @@
                             
                         <div class="d-flex align-items-center justify-content-between">
                             <h3 class="fs-6">CSS</h3>
-                            <p>50%</p></div>
+                            <p>60%</p></div>
                             <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                         </div>
                     </div>
@@ -207,25 +218,25 @@
                 </div>
             </div>
             <div class="row text-center text-uppercase py-3">
-                <div class="col-sm-3">
+                <div class="col-sm-3 box-shadow p-3">
                     <div class="fact-item fw-blod">
-                       <h4><i class="fa fa-hourglass-start me-3" aria-hidden="true"></i> 100</h4>
+                       <h4><i class="fa fa-hourglass-start me-3" aria-hidden="true"></i> 30</h4>
                     <p class="text-muted">Projects Completed</p>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 box-shadow p-3">
                     <div class="fact-item fw-blod">
-                        <h4><i class="fa fa-user-circle-o me-3" aria-hidden="true"></i> 75</h4>
+                        <h4><i class="fa fa-user-circle-o me-3" aria-hidden="true"></i> 15</h4>
                     <p class="text-muted">Happy Clients</p>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 box-shadow p-3">
                     <div class="fact-item fw-blod">
-                        <h4><i class="fa fa-star-o me-3" aria-hidden="true"></i> 60</h4>
+                        <h4><i class="fa fa-star-o me-3" aria-hidden="true"></i> 10</h4>
                     <p class="text-muted">Positive Reviews</p>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 box-shadow p-3">
                     <div class="fact-item fw-blod">
                         <h4><i class="fa fa-code me-3" aria-hidden="true"></i> 10000</h4>
                     <p class="text-muted">Coding</p>
@@ -239,12 +250,12 @@
        <!------------ about section end--------------->
        <!--------------- what I do  start------------------->
      
-       <section class="container">
+       <section class="container" id="services">
            <div class="container">
         <h2 class="section-title text-center py-4">What I Do</h2>
            <div class="row g-3 service">
                <div class="col-md-4">
-                <div class="card bg-primary s-c">
+                <div class="card bg-primary">
                     <div class="card-body text-center">
   
                      <p class="text-center">
@@ -333,10 +344,333 @@
                </div>
            </div>
            </div>
+           <p class="text-center py-5">Looking for a custom job?<span><a class="custom btn-defult" href="#contact">Contact Me</a></span>👋</p>
         </div>
        </section>
        <!--------------- what I do  end------------------->
+
+       <!--------------------- 
+        Latest work section start
+        --------------> 
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 7 - THE PORTFOLIO  
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="portfolio" class="portfolio">
+    <div class="container mb-5">
+      <div class="row text-center mt-5 mb-3">
+        <h1 class="display-3 fw-bold text-capitalize" id="my-work">Latest work</h1>
+        <div class="heading-line"></div>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint porro temporibus distinctio.
+        </p>
+      </div>
+      <!-- FILTER BUTTONS 
+      <div class="row mt-5 mb-4 g-3 text-center">
+        <div class="col-md-12">
+          <button class="btn btn-outline-primary" type="button">All</button>
+          <button class="btn btn-outline-primary" type="button">websites</button>
+          <button class="btn btn-outline-primary" type="button">design</button>
+          <button class="btn btn-outline-primary" type="button">mockup</button>
+        </div>
+      </div> -->
+  
+      <!-- START THE PORTFOLIO ITEMS  -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="portfolio-box shadow mb-4">
+              <img src="images/my work/ragoi-madrasha-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid  mb-2">
+              <div class="portfolio-info text-center p-2">
+                <div class="caption layer">
+                  <h5>Collage Website</h5>
+                  <a class="btn project-btn" target="_blank" href="https://ragoi-madrasha.netlify.app/">Live Preview</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/my work/-football-website-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid  mb-2">
+            <div class="portfolio-info text-center p-2">
+              <div class="caption layer">
+                <h5>Copa America</h5>
+                <a class="btn project-btn" target="_blank" href="https://tanvirhnur.github.io/responsive-football-website/index.html">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/my work/cow-market-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid  mb-2">
+            <div class="portfolio-info text-center p-2">
+              <div class="caption layer">
+                <h5>Animal Market</h5>
+                <a class="btn project-btn" target="_blank" href="https://tanvirhnur.github.io/cow-s-market/">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/my work/panda-commerce-2.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid  mb-2">
+            <div class="portfolio-info text-center p-2">
+              <div class="caption layer">
+                <h5>Panda Ecommerce</h5>
+                <a class="btn project-btn" target="_blank" href="https://panda-ecommerce-gadget.netlify.app/">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/my work/leader-board-2.png" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid  mb-2">
+            <div class="portfolio-info text-center p-2">
+              <div class="caption layer">
+                <h5>Leader Board</h5>
+                <a class="btn project-btn" target="_blank" href="https://tanvirhnur.github.io/Leader-board/index.html">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/my work/food-net-2.png" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid  mb-2">
+            <div class="portfolio-info text-center p-2">
+              <div class="caption layer">
+                <h5>Food Network</h5>
+                <a class="btn project-btn" target="_blank" href="https://tanvirhnur.github.io/food-network/">Live Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    </section>
+        <!--------------------- 
+       Latest work section
+       --------------> 
+
+       <!--------------------- 
+        hire-me-section start-------------->     
+       <section id="hire">
+           <div class="container py-5 hire-me mt-5">
+               <div class="row">
+                   <div class="col-lg-12 text-center">
+                    <h6>Do Have Any Project?</h6>
+                    <h1>I am Available For Freelance Projects</h1>
+                    <a class="btn my-btn" target="_blank" href="https://www.linkedin.com/in/tanvir-hossain-1aa340196/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9ClqzuZhQBiSTUGXw%2B8zSw%3D%3D">Hire Me</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!--------------------- hire-me-section end-------------->
+       <!--------------------- 
+        testimonial section  start
+        -------------->
+        <section class="container test" id="reviews">
+            <h2 class="section-title text-center py-4" style="color: #00C88F;">Testimonial</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-danger" aria-label="Slide 3"></button>
+                    </div>
+                
+                        <div class="carousel-inner">
+                        <div class="carousel-item active shadow-lg p-3 m-3 bg-body rounded">
+                            <div class="testi-author-info d-flex align-items-center justify-content-center mb-4">
+                                <div class="thumb">
+                                    <img class="rounded-circle" src="images/testimonial/client2.jpg" alt="">
+                                </div>
+                                <div class="author-post ms-3">
+                                    <h3>Readf Kelis</h3>
+                                <p class="text-muted">SEO, IBM</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quibusdam assumenda unde! Ab omnis provident, aliquam laborum dolores accusantium ullam.</p>
+                            <div class="ratings text-warning mb-3">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item shadow-lg p-3 m-3 bg-body rounded">
+                            <div class="testi-author-info d-flex align-items-center justify-content-center mb-4">
+                                <div class="thumb">
+                                    <img class="rounded-circle" src="images/testimonial//client6.jpg" alt="">
+                                </div>
+                                <div class="author-post ms-3">
+                                    <h3>Billy Simon</h3>
+                                <p class="text-muted">Executive Director of Kirzo Ltd.</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quibusdam assumenda unde! Ab omnis provident, aliquam laborum dolores accusantium ullam.</p>
+                            <div class="ratings text-warning mb-3">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item shadow-lg p-3 m-3 bg-body rounded">
+                            <div class="testi-author-info d-flex align-items-center justify-content-center mb-4">
+                                <div class="thumb">
+                                    <img class="rounded-circle" src="images/testimonial//client3.jpg" alt="">
+                                </div>
+                                <div class="author-post ms-3">
+                                    <h3>Charles D'costa</h3>
+                                <p class="text-muted">Lead Instructor of Norman Institute</p>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quibusdam assumenda unde! Ab omnis provident, aliquam laborum dolores accusantium ullam.</p>
+                            <div class="ratings text-warning mb-3">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button   button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+       <!--------------------- 
+        testimonial section end
+        -------------->
+        <!-----------
+            contact section start
+            ----------------->
+            <section id="contact">
+                <div class="container py-5">
+                    <h1 class="section-title text-center pb-5">Contact me!</h1>
+                    <div class="row">
+                        
+                        <div class="col-lg-4 order-2 order-lg-1">
+                            <div class="office">
+                                <div class="mail-type d-flex text-danger pt-5">
+                                    <i class="fa fa-map-marker me-3" aria-hidden="true"></i>
+                                    <h6>Visit Office</h6>
+                                </div>
+                                <p class="text-muted">3/A,Elephant Road, Dhaka</p>
+                            </div>
+                            <div class="mail">
+                                <div class="mail-type d-flex text-danger">
+                                    <i class="fa fa-envelope me-3" aria-hidden="true"></i>
+                                    <h6>ntanvir@gmail.com</h6>
+                                </div>
+                                <p class="text-muted">Email us your inquiry</p>
+                            </div>
+                            <div class="phone">
+                                <div class="mail-type d-flex text-danger">
+                                    <i class="fa fa-phone-square me-3" aria-hidden="true"></i>
+                                    <h6>+8801628573755</h6>
+                                </div>
+                                <p class="text-muted">Saturday to Thursday</p>
+                            </div>
+                        </div>
+                        <!-- order-sm-first order-first col-md-last col-lg-last -->
+                        <div class="col-lg-8 order-1 order-lg-2">
+                            <h5>Let's talk about everything!</h5>
+                            <div class="contact-info">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                       <div class="form-group">
+                                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                                        <input type="email" class="form-control rounded border shadow form-control-lg fs-6" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Your Name*">
+                                        <div id="emailHelp" class="form-text">We'll never share your info with anyone else.</div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                         <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                         <input type="email" class="form-control rounded border shadow form-control-lg fs-6" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="Your Email*">
+                                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="row form-group py-4">
+                                    <div class="col-lg-12">
+                                        <input class="form-control rounded border shadow form-control-lg fs-6" type="text" name="" id="" required placeholder="Subject*">
+                                    </div>
+                                </div>
+                                <div class="row form-group py-2">
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control rounded border shadow fs-6" name="" id="" cols="50" rows="6" required placeholder="Message*"></textarea>
+                                    </div>
+                                </div>
+                                    <a class="btn my-btn" href="" >Send Message</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        <!-----------
+            contact section end
+            ----------------->
     </main>
+    <footer class="container-fluid">
+        <p class="text-center text-light">© 2021 Tanvir | The Tech Guy</p>
+    </footer>
+    <!-- js for typed-items -->
+    <script>
+        $(document).on('ready', function () {
+          // initialization of text animation (typing)
+          var typed = new Typed(".js-text-animation", {
+            strings: ["more professional.", "perfect in every way.", "astonishing."],
+            typeSpeed: 60,
+            loop: true,
+            backSpeed: 25,
+            backDelay: 1500
+          });
+        });
+      </script>
+    <!-- js for typed-items -->
+    <!-- Scroll To Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+ <div class="elfsight-app-5839a019-4fc7-4161-9c59-8768c6513e45"></div>
+
+    <!-- js for styles -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- js for typed -->
+    <script src="../../assets/vendor/typed.js/lib/typed.min.js"></script>
 </body>
 </html>
